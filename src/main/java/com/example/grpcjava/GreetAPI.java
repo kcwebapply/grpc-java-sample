@@ -5,8 +5,10 @@ import com.example.grpcjava.protogen.GreetRequest;
 import com.example.grpcjava.protogen.GreetResponse;
 import io.grpc.stub.StreamObserver;
 import org.lognet.springboot.grpc.GRpcService;
+import org.springframework.stereotype.Component;
 
 @GRpcService
+@Component
 public class GreetAPI extends GreetGrpc.GreetImplBase {
 
 
